@@ -8,11 +8,13 @@
 
     <header class="page-header">
       <div class="page-header__inner">
-        <div class="logo">
-          <a class="logo__link">
-            <img class="logo__img" src="" alt="Логотип Cat Energy">
-          </a>
-        </div>
+        <a class="logo">
+          <img class="logo__img" src="" alt="Логотип Cat Energy">
+        </a>
+
+        <a class="logo-text">
+          <img class="logo-text__img" src="" alt="Текст логотипа Cat Energy">
+        </a>
         <h1 class="page-header__title">Cat energy</h1>
         <button class="page-header__toggle"></button>
       </div>
@@ -66,11 +68,11 @@
       </section>
 
       <section class="living-example">
-        <h2 class="living-example__title"></h2>
+        <h2 class="living-example__title">Живой пример</h2>
 
-        <p class="living-example__text"></p>
+        <p class="living-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
-        <table>
+        <table class="living-example__table">
           <tr>
             <th>5 кг</th>
             <th>60 дней</th>
@@ -83,9 +85,51 @@
         </table>
 
         <p class="living-example__expenses">Затраты на питание: 15 000 руб.</p>
+
+        <div class="living-example__slider slider-cat">
+          <span class="slider-cat__before">Было</span>
+          <span class="slider-cat__after">Стало</span>
+
+          <div class="slider-cat__scale">
+            <div class="slider-cat__bar"></div>
+          </div>
+
+          <button class="slider-cat__toggle"></button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="page-footer__address address">
+        <h2 class="visually-hidden">Адрес интернет-магазина</h2>
+        <p class="address__lead">Приглашаем  к сотрудничеству  дилеров!</p>
+        <address>
+          <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="address__text">Санкт-Петербург</p>
+        </address>
       </section>
 
-    </main>
+      <div class="page-footer__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533184!2d30.320858716396373!3d59.9387164818763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554643320251!5m2!1sru!2sru" width="600" height="450" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <a class="logo-text">
+        <img class="logo-text__img" src="" alt="Текст логотипа Cat Energy">
+      </a>
+
+      <div class="page-footer__social social">
+        <a class="social__link" href="" aria-label="Иконка Вконтакте"></a>
+        <a class="social__link" href="" aria-label="Иконка Инстаграм"></a>
+        <a class="social__link" href="" aria-label="Иконка Фейсбук"></a>
+      </div>
+
+      <div class="page-footer__developer developer">
+        <a href="">HTML Academy</a>
+        <a href="">
+          <img class="developer__logo" src="" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </footer>
 
   </body>
 </html>
