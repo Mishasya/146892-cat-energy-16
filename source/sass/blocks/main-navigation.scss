@@ -1,0 +1,25 @@
+.main-navigation {
+  @include list-reset();
+  font-family: "Oswald Medium", "Arial", sans-serif;
+  display: none;
+
+  &--show {
+    display: block;
+  }
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
+.main-navigation__link {
+  display: block;
+  width: 100%;
+  padding: 23px 0;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: $black;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e6e6e6;
+}
