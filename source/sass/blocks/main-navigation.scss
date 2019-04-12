@@ -1,7 +1,7 @@
 .main-navigation {
   @include list-reset();
-  font-family: "Oswald Medium", "Arial", sans-serif;
   display: none;
+  font-weight: 500;
 
   &--show {
     display: block;
