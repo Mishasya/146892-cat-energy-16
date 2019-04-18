@@ -1,0 +1,28 @@
+.address {
+  padding: 28px 0;
+}
+
+.address__inner {
+  display: flex;
+}
+
+.address__lead {
+  margin: 0;
+  margin-right: 16px;
+  width: 125px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.address__text-inner {
+  width: 136px;
+}
+
+.address__text {
+  margin: 0;
+  font-family: $font-arial;
+  font-size: 14px;
+  line-height: 20px;
+}
