@@ -1,7 +1,7 @@
 .work-example {
   position: relative;
   width: 280px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .work-example__title {
@@ -14,10 +14,12 @@
 }
 
 .work-example__text {
+  display: flex;
   width: 200px;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   padding-left: 80px;
+  align-items: center;
   font-family: "Arial", sans-serif;
 
   &::before {
