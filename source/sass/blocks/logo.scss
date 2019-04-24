@@ -16,3 +16,10 @@
     width: 130px;
   }
 }
+
+@media (min-width: $tablet-width) {
+
+  .logo {
+    width: 175px;
+  }
+}

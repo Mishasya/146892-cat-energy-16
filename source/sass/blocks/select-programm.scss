@@ -22,6 +22,10 @@
   }
 }
 
+.select-programm__choice-btn {
+  padding: 11px 73px;
+}
+
 .select-programm__title {
   margin: 0;
   margin-left: 71px;
@@ -90,6 +94,60 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .select-programm__choice-btn {
+    margin-left: 90px;
+    margin-bottom: 509px;
+    padding: 16px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .select-programm__description {
+    width: 594px;
+    padding-top: 75px;
+    padding-bottom: 55px;
+    padding-left: 53px;
+    padding-right: 61px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 91px;
+      left: 447px;
+    }
+  }
+
+  .select-programm__title {
+    margin-bottom: 25px;
+    margin-left: 0;
+    font-size: 36px;
+    line-height: 37px;
+    color: #111111;
+
+    &::before {
+      width: 145px;
+      height: 195px;
+      left: 500px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .select-programm__text {
+    width: 375px;
+    border: none;
+  }
+
+  .select-programm__link {
+    margin-top: 33px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

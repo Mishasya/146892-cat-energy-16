@@ -24,7 +24,6 @@
     width: 280px;
     height: 271px;
     background-image: url("../img/index-can-mobile@1x.png");
-
   }
 }
 
@@ -43,4 +42,44 @@
   line-height: 14px;
   color: $white;
   text-transform: uppercase;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .slogan {
+    width: 430px;
+    padding-bottom: 0;
+    padding-top: 23px;
+    margin-left: 119px;
+    margin-bottom: 48px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      width: 709px;
+      height: 609px;
+      top: 223px;
+      left: -90px;
+      background-image: url("../img/index-can-tablet@1x.jpg");
+      z-index: -10;
+    }
+  }
+
+  .slogan__title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    text-align: left;
+  }
+
+  .slogan__lead {
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+    text-align: left;
+  }
 }

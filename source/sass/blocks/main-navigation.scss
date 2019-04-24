@@ -23,3 +23,38 @@
   text-transform: uppercase;
   border-bottom: 1px solid #e6e6e6;
 }
+
+
+@media (min-width: $tablet-width) {
+
+  .main-navigation {
+    display: flex;
+    width: 440px;
+    justify-content: space-between;
+    
+    &:first-child {
+      border: none;
+    }
+  }
+
+  .main-navigation__link {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    border: none;
+    color: #222222;
+
+    &--active {
+      padding-bottom: 8px;
+      border-bottom: 2px solid $green;
+    }
+
+    &:hover:not(.main-navigation__link--active) {
+      color: rgba(#222222, 0.6%)
+    }
+
+    &:active:not(.main-navigation__link--active) {
+      color: rgba(#222222, 0.3%)
+    }
+  }
+}
