@@ -100,6 +100,10 @@
 
 @media (min-width: $tablet-width) {
 
+  .select-programm {
+    margin-bottom: 46px;
+  }
+
   .select-programm__choice-btn {
     margin-left: 90px;
     margin-bottom: 509px;
@@ -111,8 +115,9 @@
 
   .select-programm__description {
     width: 594px;
+    margin-bottom: 31px;
     padding-top: 75px;
-    padding-bottom: 55px;
+    padding-bottom: 58px;
     padding-left: 53px;
     padding-right: 61px;
 
@@ -142,12 +147,21 @@
   .select-programm__text {
     width: 375px;
     border: none;
+
+    &--tablet-width {
+      width: 342px;
+    }
   }
 
   .select-programm__link {
     margin-top: 33px;
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      margin-left: 22px;
+      top: 4px;
+    }
   }
 }
 

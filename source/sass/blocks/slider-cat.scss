@@ -44,3 +44,13 @@
 .slider-cat__toggle {
   display: none;
 }
+
+
+@media (min-width: $tablet-width) {
+
+  .slider-cat {
+    width: 768px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+  }
+}
