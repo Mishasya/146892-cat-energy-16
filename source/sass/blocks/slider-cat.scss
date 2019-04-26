@@ -51,6 +51,46 @@
   .slider-cat {
     width: 768px;
     margin: 0 auto;
+    padding-bottom: 69px;
     background-color: #f2f2f2;
+  }
+
+  .slider-cat__inner {
+    position: relative;
+    width: 570px;
+    margin-top: 68px;
+  }
+
+  .slider-cat__text {
+    border-bottom: 1px dotted #bebebe;
+    padding-bottom: 3px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+  }
+
+  .slider-cat__scale {
+    width: 415px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border: none;
+  }
+
+  .slider-cat__bar {
+    display: none;
+  }
+
+  .slider-cat__toggle {
+    position: absolute;
+    display: inline-block;
+    @include toggle-btn-reset();
+    width: 8px;
+    height: 8px;
+    left: 50%;
+    border-radius: 50%;
+    background-color: $green;
+    box-shadow: 0 0 0 12px $white,
+                0 0 0 13px #cfcfcf,
+                0 4px 5px 12px rgba($black, 0.15%);
   }
 }
