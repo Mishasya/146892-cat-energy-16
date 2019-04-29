@@ -21,5 +21,20 @@
 
   .logo {
     width: 175px;
+
+    &--footer {
+      width: 132px;
+      margin: 0;
+      border: none;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .logo {
+    width: 205px;
+    padding: 0;
   }
 }

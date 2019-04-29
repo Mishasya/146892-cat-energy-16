@@ -58,3 +58,21 @@
     }
   }
 }
+
+
+@media (min-width: $desktop-width) {
+
+  .main-navigation {
+    width: 480px;
+  }
+
+  .main-navigation__link {
+    font-size: 20px;
+    line-height: 24px;
+    color: $white;
+
+    &--active {
+      border-bottom: 2px solid $white;
+    } 
+  }
+}

@@ -12,3 +12,11 @@
   font-family: "Arial", sans-serif;
   color: $grey;
 }
+
+
+@media (min-width: $tablet-width) {
+
+  .developer {
+    width: 162px;
+  }
+}

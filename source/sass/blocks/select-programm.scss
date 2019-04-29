@@ -165,3 +165,55 @@
   }
 }
 
+
+@media (min-width: $desktop-width) {
+
+  .select-programm {
+    margin-bottom: 43px;
+  }
+
+  .select-programm__choice-btn {
+    padding: 16px 27px;
+    margin-left: 80px;
+    margin-bottom: 249px;
+  }
+
+  .select-programm__description-inner {
+    display: flex;
+    width: 1220px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .select-programm__description {
+    width: 456px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      left: 52px;
+      top: 45px;
+    }
+  }
+
+  .select-programm__title {
+    margin-left: 161px;
+    margin-bottom: 73px;
+
+    &::before {
+      width: 72px;
+      height: 97px;
+      left: 61px;
+      top: 84px;
+    }
+  }
+
+  .select-programm__text {
+    width: 463px;
+  }
+
+  .select-programm__link {
+    margin-top: 8px;
+  }
+}
+

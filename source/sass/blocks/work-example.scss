@@ -145,6 +145,42 @@
     &--clock::after {
       content: "4";
     }
+  }
+}
 
+
+@media (min-width: $desktop-width) {
+
+  .work-example {
+    width: 100%;
+    padding-bottom: 50px;
+    border: none;
+  }
+
+  .work-example__inner {
+    width: 1220px;
+    justify-content: space-between;
+  }
+
+  .work-example__text-inner {
+    width: 245px;
+    margin: 0;
+  }
+
+  .work-example__text {
+
+    &::after {
+      right: 0;
+    }
+
+    &--leaf::after {
+      content: "1";
+      right: 16px;
+    }
+
+    &--clock::after {
+      content: "4";
+      right: -3px;
+    }
   }
 }

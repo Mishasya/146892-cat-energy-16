@@ -83,3 +83,39 @@
     text-align: left;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+
+  .slogan {
+    width: 1060px;
+    padding: 0 80px;
+    padding-top: 52px;
+    margin: 0 auto;
+
+    &::before {
+      display: inline-block;
+      width: 720px;
+      height: 696px;
+      top: -170px;
+      left: 610px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+    }
+
+    &::after {
+      width: 552px;
+      height: 499px;
+      top: -28px;
+      left: 450px;
+      background-image: url("../img/index-can-desktop@1x.png");
+    }
+  }
+
+  .slogan__title {
+    width: 415px;
+  }
+
+  .slogan__lead {
+    margin-bottom: 54px;
+  }
+}
