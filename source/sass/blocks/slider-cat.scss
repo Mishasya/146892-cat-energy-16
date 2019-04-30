@@ -92,5 +92,33 @@
     box-shadow: 0 0 0 12px $white,
                 0 0 0 13px #cfcfcf,
                 0 4px 5px 12px rgba($black, 0.15%);
+    cursor: pointer;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .slider-cat {
+    width: 650px;
+    margin: 0;
+    margin-top: -45px;
+    padding-bottom: 0;
+    background-color: transparent;
+  }
+
+  .slider-cat__container {
+    width: 650px;
+    padding: 0;
+  }
+
+  .slider-cat__inner {
+    margin: 0;
+    margin-top: 68px;
+    margin-left: auto;
+  }
+
+  .slider-cat__text {
+    padding-bottom: 6px;
   }
 }
