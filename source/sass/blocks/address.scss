@@ -26,3 +26,40 @@
   font-size: 14px;
   line-height: 20px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .address {
+    width: 768px;
+    margin: 0 auto;
+    padding: 65px 0;
+    padding-bottom: 59px;
+  }
+
+  .address__inner {
+    width: 623px;
+    justify-content: space-between;
+  }
+
+  .address__lead {
+    width: 155px;
+    margin-right: 0;
+    font-size: 20px;
+    line-height: 25px;
+    color: #111111;
+  }
+
+  .address__text-inner {
+    width: 155px;
+  }
+
+  .address__text {
+    margin-bottom: 19px;
+    font-size: 16px;
+    text-align: right;
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+  }
+}

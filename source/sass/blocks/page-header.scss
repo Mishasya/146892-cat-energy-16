@@ -50,3 +50,58 @@
   height: 18px;
   cursor: pointer;
 }
+
+
+@media (min-width: $tablet-width) {
+
+  .page-header { 
+    width: 768px;
+    margin: 0 auto;
+    
+  }
+
+  .page-header__container {
+    display: flex;
+    width: 708px;
+    margin: 0 auto;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__inner {
+    width: 175px;
+    margin: 0;
+  }
+
+  .page-header__toggle-inner {
+    display: none;
+  }
+
+  .page-header__nav {
+    width: 440px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .page-header {
+    width: 100%;
+    padding: 43px 0;
+  }
+
+  .page-header__container {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .page-header__nav {
+    width: 480px;
+  }
+
+  .page-header__inner {
+    width: 205px;
+  }
+}

@@ -1,0 +1,27 @@
+.photo-cat__img {
+  &--after {
+    display: none;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .photo-cat {
+    position: relative;
+    min-height: 300px;
+  }
+  .photo-cat__img {
+    position: absolute;
+    bottom: -48px;
+    left: 17px;
+
+    // &--before {
+    //   clip-path: inset(100px 50px);
+    // }
+
+    &--after {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.developer {
+  display: flex;
+  width: 280px;
+  padding: 19px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.developer__link {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  color: $grey;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .developer {
+    width: 162px;
+  }
+}

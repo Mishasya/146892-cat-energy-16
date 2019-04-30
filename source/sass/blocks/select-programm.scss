@@ -22,6 +22,10 @@
   }
 }
 
+.select-programm__choice-btn {
+  padding: 11px 73px;
+}
+
 .select-programm__title {
   margin: 0;
   margin-left: 71px;
@@ -55,7 +59,7 @@
 
 .select-programm__text {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
   font-family: "Arial", sans-serif;
 }
@@ -72,7 +76,7 @@
   &::after {
     content: "";
     position: absolute;
-    margin-left: 14px;
+    margin-left: 12px;
     width: 25px;
     height: 14px;
     background-image: url("../img/icon-right-arrow-long.svg");
@@ -90,6 +94,126 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .select-programm {
+    margin-bottom: 46px;
+  }
+
+  .select-programm__choice-btn {
+    margin-left: 90px;
+    margin-bottom: 509px;
+    padding: 16px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .select-programm__description {
+    width: 594px;
+    margin-bottom: 31px;
+    padding-top: 75px;
+    padding-bottom: 58px;
+    padding-left: 53px;
+    padding-right: 61px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 91px;
+      left: 447px;
+    }
+  }
+
+  .select-programm__title {
+    margin-bottom: 25px;
+    margin-left: 0;
+    font-size: 36px;
+    line-height: 37px;
+    color: #111111;
+
+    &::before {
+      width: 145px;
+      height: 195px;
+      left: 500px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .select-programm__text {
+    width: 375px;
+    border: none;
+
+    &--tablet-width {
+      width: 342px;
+    }
+  }
+
+  .select-programm__link {
+    margin-top: 33px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      margin-left: 22px;
+      top: 4px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .select-programm {
+    margin-bottom: 43px;
+  }
+
+  .select-programm__choice-btn {
+    padding: 16px 27px;
+    margin-left: 80px;
+    margin-bottom: 249px;
+  }
+
+  .select-programm__description-inner {
+    display: flex;
+    width: 1220px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .select-programm__description {
+    width: 456px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      left: 52px;
+      top: 45px;
+    }
+  }
+
+  .select-programm__title {
+    margin-left: 161px;
+    margin-bottom: 73px;
+
+    &::before {
+      width: 72px;
+      height: 97px;
+      left: 61px;
+      top: 84px;
+    }
+  }
+
+  .select-programm__text {
+    width: 463px;
+  }
+
+  .select-programm__link {
+    margin-top: 8px;
   }
 }
 
