@@ -63,3 +63,27 @@
     }
   }
 }
+
+
+@media (min-width: $desktop-width) {
+
+  .address {
+    position: absolute;
+    width: 404px;
+    top: 95px;
+    left: 9.8%;
+    padding-left: 76px;
+    padding-right: 90px;
+    background-color: $white;
+  }
+
+  .address__inner {
+    width: 404px;
+    padding: 0;
+  }
+
+  .address__text {
+    text-align: left;
+  }
+}
+

@@ -42,3 +42,29 @@
     flex-wrap: wrap;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+
+  .page-footer {
+    position: relative;
+    width: 100%;
+  }
+
+  .page-footer__map,
+  .page-footer__map iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  .page-footer__bottom-inner {
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+
+  .page-footer__bottom-container {
+    width: 1220px;
+    padding: 63px 40px;
+  }
+}
+

@@ -25,3 +25,12 @@
     margin: 0;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+
+  .social {
+    width: 130px;
+    padding: 0;
+  }
+}
