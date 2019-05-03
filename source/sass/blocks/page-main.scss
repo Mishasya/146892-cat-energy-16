@@ -21,7 +21,19 @@
 
   .page-main {
     width: 768px; 
-  } 
+  }
+
+  .page-main__title {
+    padding-top: 22px;
+    padding-left: 30px;
+    border: none;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .page-main__catalog {
+    width: 768px;
+  }
 }
 
 

@@ -24,3 +24,42 @@
     background-color: $green;
   }
 }
+
+.add-goods__present {
+  position: relative;
+  width: 280px;
+  padding: 39px 0;
+  padding-bottom: 77px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 289px;
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
+    background-position: 0 0;
+    z-index: -2;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 59px;
+    top: 28.8%;
+    left: 40.5%;
+    background-image: url("../img/icon-gift.svg");
+  }
+}
+
+.add-goods__present-text {
+  width: 168px;
+  margin: 0 auto;
+  padding-top: 187px;
+  font-family: $font-arial;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+}
+

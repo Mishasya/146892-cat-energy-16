@@ -28,10 +28,10 @@
         <nav class="page-header__nav">
           <ul class="main-navigation">
             <li class="main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--active">Главная</a>
+              <a class="main-navigation__link" href="index.html">Главная</a>
             </li>
             <li class="main-navigation__item">
-              <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+              <a class="main-navigation__link main-navigation__link--active">Каталог продукции</a>
             </li>
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="form.html">Подбор программы</a>
@@ -270,17 +270,17 @@
           <ul class="add-goods__list add-goods-list">
             <li class="add-goods-list__item">
               <h3 class="add-goods-list__title">Сахарозаменитель</h3>
-              <table class="add-goods__table">
+              <table class="add-goods-list__table">
                 <tr>
                   <td>1 упаковка (100 г)</td>
-                  <td>200 Р.</td>
+                  <td>100 Р.</td>
                 </tr>
               </table>
               <a class="add-goods-list__btn-order btn" href="#">Заказать</a>
             </li>
             <li class="add-goods-list__item">
               <h3 class="add-goods-list__title">Питьевая вода</h3>
-              <table>
+              <table class="add-goods-list__table">
                 <tr>
                   <td>5 литров</td>
                   <td>50 Р.</td>
@@ -290,7 +290,7 @@
             </li>
             <li class="add-goods-list__item">
               <h3 class="add-goods-list__title">Молоко</h3>
-              <table>
+              <table class="add-goods-list__table">
                 <tr>
                   <td>1 литр</td>
                   <td>100 Р.</td>
@@ -300,7 +300,7 @@
             </li>
             <li class="add-goods-list__item">
               <h3 class="add-goods-list__title">Витамины</h3>
-              <table>
+              <table class="add-goods-list__table">
                 <tr>
                   <td>1 упаковка (30 г)</td>
                   <td>300 Р.</td>
@@ -311,41 +311,55 @@
           </ul>
   
           <div class="add-goods__present">
-            <p class="add-goods__present-text">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="add-goods__present-text">Закажите все<br>и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <section class="page-footer__address address address--catalog">
+      <section class="address address--not-index">
         <h2 class="visually-hidden">Адрес интернет-магазина</h2>
-        <p class="address__lead">Приглашаем  к сотрудничеству  дилеров!</p>
-        <address>
-          <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="address__text">Санкт-Петербург</p>
-        </address>
+        <div class="address__inner container">
+          <p class="address__lead">Приглашаем<br>к сотрудничеству дилеров!</p>
+          <div class="address__text-inner">
+            <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="address__text">Санкт-Петербург</p>
+          </div>
+        </div>
       </section>
 
       <div class="page-footer__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533184!2d30.320858716396373!3d59.9387164818763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554643320251!5m2!1sru!2sru" width="600" height="450" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533184!2d30.320858716396373!3d59.9387164818763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554643320251!5m2!1sru!2sru" width="600" height="450" allowfullscreen></iframe>
       </div>
 
-      <a class="logo logo--footer" href="index.html">
-        <img src="" alt="Текст логотипа Cat Energy">
-      </a>
+      <div class="page-footer__bottom-inner">
+        <div class="page-footer__bottom-container container">
+          <a class="logo logo--footer">
+            <img src="img/logo-footer.svg" alt="Логотип Cat Energy">
+          </a>
 
-      <div class="page-footer__social social">
-        <a class="social__link" href="" aria-label="Иконка Вконтакте"></a>
-        <a class="social__link" href="" aria-label="Иконка Инстаграм"></a>
-        <a class="social__link" href="" aria-label="Иконка Фейсбук"></a>
-      </div>
+          <div class="page-footer__social social">
+            <div class="social__inner">
+              <a class="social__link" href="#" aria-label="Иконка Вконтакте">
+                <img src="img/sprite-icon-vk-mobile.svg" alt="">
+              </a>
+              <a class="social__link" href="#" aria-label="Иконка Инстаграм">
+                <img src="img/sprite-icon-insta-mobile.svg" alt="">
+              </a>
+              <a class="social__link" href="#" aria-label="Иконка Фейсбук">
+                <img src="img/sprite-icon-fb-mobile.svg" alt="">
+              </a>
+            </div>
+          </div>
 
-      <div class="page-footer__developer developer">
-        <a href="">HTML Academy</a>
-        <a href="">
-          <img class="developer__logo" src="" alt="Логотип HTML Academy">
-        </a>
+          <div class="page-footer__developer developer">
+            <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="developer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="developer__logo" src="img/sprite-htmlacademy.svg" alt="Логотип HTML Academy">
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
 
