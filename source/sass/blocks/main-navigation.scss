@@ -31,7 +31,7 @@
     display: flex;
     width: 440px;
     justify-content: space-between;
-    
+
     &:first-child {
       border: none;
     }
@@ -73,6 +73,6 @@
 
     &--active {
       border-bottom: 2px solid $white;
-    } 
+    }
   }
 }
