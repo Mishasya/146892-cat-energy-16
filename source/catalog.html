@@ -252,7 +252,7 @@
               <a class="catalog-card__btn-order btn" href="#">Заказать</a>
             </article>
           </li>
-          <li class="catalog-list__item">
+          <li class="catalog-list__item catalog-list__item--all-products">
             <article class="catalog-card container catalog-card--show-all">
               <p class="catalog-card__more">Показать еще 100500 товаров</p>
               <p class="catalog-card__text">На самом деле вкусов гораздо больше!</p>
@@ -264,16 +264,16 @@
       </section>
 
       <section class="page-main__add-goods add-goods">
-        <div class="container">
-          <h2 class="add-goods__title">Дополнительные товары</h2>
+        <h2 class="add-goods__title">Дополнительные товары</h2>
 
+        <div class="container">
           <ul class="add-goods__list add-goods-list">
             <li class="add-goods-list__item">
               <h3 class="add-goods-list__title">Сахарозаменитель</h3>
               <table class="add-goods-list__table">
                 <tr>
                   <td>1 упаковка (100 г)</td>
-                  <td>100 Р.</td>
+                  <td class="add-goods-list__price">100 Р.</td>
                 </tr>
               </table>
               <a class="add-goods-list__btn-order btn" href="#">Заказать</a>
@@ -283,7 +283,7 @@
               <table class="add-goods-list__table">
                 <tr>
                   <td>5 литров</td>
-                  <td>50 Р.</td>
+                  <td class="add-goods-list__price">50 Р.</td>
                 </tr>
               </table>
               <a class="add-goods-list__btn-order btn" href="">Заказать</a>
@@ -293,7 +293,7 @@
               <table class="add-goods-list__table">
                 <tr>
                   <td>1 литр</td>
-                  <td>100 Р.</td>
+                  <td class="add-goods-list__price">100 Р.</td>
                 </tr>
               </table>
               <a class="add-goods-list__btn-order btn" href="">Заказать</a>
@@ -303,7 +303,7 @@
               <table class="add-goods-list__table">
                 <tr>
                   <td>1 упаковка (30 г)</td>
-                  <td>300 Р.</td>
+                  <td class="add-goods-list__price">300 Р.</td>
                 </tr>
               </table>
               <a class="add-goods-list__btn-order btn" href="">Заказать</a>
@@ -311,7 +311,9 @@
           </ul>
 
           <div class="add-goods__present">
-            <p class="add-goods__present-text">Закажите все<br>и получите чехол для кота в подарок!</p>
+            <div class="add-goods__present-inner">
+              <p class="add-goods__present-text">Закажите все<br>и получите чехол для кота в подарок!</p>
+            </div>
           </div>
         </div>
       </section>

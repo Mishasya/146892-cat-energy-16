@@ -23,7 +23,7 @@
       content: "";
       left: 49.8%;
       top: 27px;
-      width: 2.5px;
+      width: 2px;
       height: 30px;
       background-color: #d3d3d3;
     }
@@ -107,6 +107,22 @@
   .catalog-card {
     position: relative;
     width: 324px;
+
+    &--show-all {
+      padding: 0;
+
+      &::before {
+        width: 60px;
+        top: -80px;
+        left: 41%;
+      }
+
+      &::after {
+        top: -109px;
+        height: 60px;
+        left: 50%;
+      }
+    }
   }
 
   .catalog-card__picture {
@@ -139,6 +155,10 @@
   .catalog-card__btn-order {
     width: 250px;
     margin: 0 auto;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
   }
 
   .catalog-card__table {
@@ -152,5 +172,21 @@
     width: 250px;
     padding: 6px 0;
     border-bottom: 1px solid #cdcdcd;
+  }
+
+  .catalog-card__more {
+    width: 165px;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .catalog-card__text {
+    width: 167px;
+    margin-bottom: 83px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
   }
 }
