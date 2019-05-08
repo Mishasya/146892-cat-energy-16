@@ -25,3 +25,12 @@
     }
   }
 }
+
+
+@media (min-width: $desktop-width) {
+
+  .photo-cat__img {
+    bottom: -23px;
+    left: 5px;
+  }
+}

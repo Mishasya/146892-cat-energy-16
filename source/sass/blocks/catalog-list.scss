@@ -1,0 +1,50 @@
+.catalog-list {
+  @include list-reset();
+  width: 320px;
+}
+
+.catalog-list__item {
+  width: 320px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .catalog-list {
+    display: flex;
+    width: 708px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .catalog-list__item {
+    width: 324px;
+    margin-top: 138px;
+    padding-top: 164px;
+    padding-bottom: 41px;
+    border: none;
+    background-color: #f2f2f2;
+
+    &--all-products {
+      background-color: $white;
+      box-shadow: 0 0 0 1px #e6e6e6;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .catalog-list {
+    width: 1220px;
+  }
+
+  .catalog-list__item {
+    width: 245px;
+    margin-top: 139px;
+    box-sizing: border-box;
+  }
+}

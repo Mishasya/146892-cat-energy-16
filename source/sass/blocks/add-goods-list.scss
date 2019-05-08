@@ -1,0 +1,143 @@
+.add-goods-list {
+  @include list-reset();
+  width: 280px;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+}
+
+.add-goods-list__item {
+  padding-top: 13px;
+  padding-bottom: 17px;
+}
+
+.add-goods-list__title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.add-goods-list__table {
+  width: 280px;
+  margin-bottom: 14px;
+  font-family: $font-arial;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.add-goods-list__table tr {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.add-goods-list__table td {
+  padding: 0;
+}
+
+.add-goods-list__btn-order {
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .add-goods-list {
+    width: 708px;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  .add-goods-list__item {
+    display: flex;
+    width: 633px;
+    padding: 0 37px;
+    padding-top: 25px;
+    padding-bottom: 28px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+
+    &:last-child {
+      border-bottom: 1px solid #e6e6e6;;
+    }
+  }
+
+  .add-goods-list__title {
+    width: 286px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .add-goods-list__table {
+    width: 287px;
+    padding-top: 1px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .add-goods-list__price {
+    width: 95px;
+    text-align: right;
+  }
+
+  .add-goods-list__table tr {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .add-goods-list__btn-order {
+    width: 633px;
+    margin-top: 9px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .add-goods-list {
+    width: 895px;
+  }
+
+  .add-goods-list__item {
+    width: 895px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    border-left: none;
+    border-right: none;
+    align-items: baseline;
+  }
+
+  .add-goods-list__title {
+    width: 285px;
+  }
+
+  .add-goods-list__table {
+    width: 285px;
+  }
+
+  .add-goods-list__btn-order {
+    width: 245px;
+    margin: 0;
+  }
+
+  .add-goods-list__table tr {
+    justify-content: space-between;
+  }
+}
+

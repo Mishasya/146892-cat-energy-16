@@ -20,3 +20,11 @@
     width: 162px;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+
+  .developer {
+    padding: 0;
+  }
+}
