@@ -17,5 +17,10 @@
   .container {
     width: 1220px;
     padding: 0 40px;
+
+    &--add-goods {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

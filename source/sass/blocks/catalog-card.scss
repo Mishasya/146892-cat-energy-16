@@ -190,3 +190,40 @@
     text-align: center;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+
+  .catalog-card {
+    width: 245px;
+    padding: 0;
+
+    &--show-all {
+
+      &::before {
+        top: -79px;
+        left: 38%;
+      }
+    }
+  }
+
+  .catalog-card__picture {
+    width: 245px;
+    height: 208px;
+  }
+
+  .catalog-card__table-inner {
+    width: 170px;
+  }
+  .catalog-card__table {
+    width: 170px;
+  }
+
+  .catalog-card__table-row {
+    width: 170px;
+  }
+
+  .catalog-card__btn-order {
+    width: 170px;
+  }
+}

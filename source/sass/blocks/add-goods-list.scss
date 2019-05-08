@@ -104,3 +104,40 @@
     margin-top: 9px;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+
+  .add-goods-list {
+    width: 895px;
+  }
+
+  .add-goods-list__item {
+    width: 895px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    border-left: none;
+    border-right: none;
+    align-items: baseline;
+  }
+
+  .add-goods-list__title {
+    width: 285px;
+  }
+
+  .add-goods-list__table {
+    width: 285px;
+  }
+
+  .add-goods-list__btn-order {
+    width: 245px;
+    margin: 0;
+  }
+
+  .add-goods-list__table tr {
+    justify-content: space-between;
+  }
+}
+

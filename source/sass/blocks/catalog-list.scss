@@ -35,3 +35,16 @@
   }
 }
 
+
+@media (min-width: $desktop-width) {
+
+  .catalog-list {
+    width: 1220px;
+  }
+
+  .catalog-list__item {
+    width: 245px;
+    margin-top: 139px;
+    box-sizing: border-box;
+  }
+}
