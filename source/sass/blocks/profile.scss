@@ -1,0 +1,38 @@
+.profile {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.profile__title-inner {
+  position: relative;
+  padding-top: 19px;
+  padding-bottom: 21px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    top: 3px;
+    left: -19px;
+    background-color: #e6e6e6;
+  }
+}
+
+.profile__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+  color: #111111;
+}
+
+.profile__text-choice {
+  width: 228px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #111111;
+  text-transform: uppercase;
+} 

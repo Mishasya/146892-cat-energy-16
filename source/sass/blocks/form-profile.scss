@@ -1,0 +1,81 @@
+.form-profile {
+  width: 320px;
+}
+
+.form-profile__fieldset {
+  width: 320px;
+  margin: 0;
+  padding: 20px 0;
+  padding-bottom: 23px;
+  border: none;
+
+  &--border-line {
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+.form-profile__input-inner {
+  display: flex;
+  width: 280px;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.form-profile__label {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+
+  &--lb-name {
+    width: 37px;
+  }
+
+  &--lb-weight {
+    width: 60px;
+  }
+
+  &--lb-age {
+    width: 94px;
+  }
+}
+
+.form-profile__input {
+  padding: 13px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+
+  &--name {
+    width: 230px;
+  }
+
+  &--weight {
+    width: 204px;
+  }
+
+  &--age {
+    width: 172px;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: $grey;
+    text-transform: uppercase;
+  }
+}
+
+.form-profile__list {
+  @include list-reset();
+}
+
+.form-profile__item {
+  padding-left: 46px;
+}
+
