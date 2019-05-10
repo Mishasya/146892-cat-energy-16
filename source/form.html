@@ -70,22 +70,16 @@
           <fieldset class="form-profile__fieldset form-profile__fieldset--border-line">
             <ul class="form-profile__list">
               <li class="form-profile__item">
-                <label class="form-profile__label">
-                  <input class="form-profile__input visually-hidden" type="radio">
-                  Похудение
-                </label>
+                <input class="form-profile__input form-profile__input--radio visually-hidden" id="slim" type="radio" name="product-group" value="slim" checked>   
+                <label class="form-profile__label" for="slim">Похудение</label>
               </li>
               <li class="form-profile__item">
-                <label class="form-profile__label">
-                  <input class="form-profile__input visually-hidden" type="radio">
-                  Набор массы
-                </label>
+                <input class="form-profile__input form-profile__input--radio visually-hidden" id="pro" type="radio" name="product-group" value="pro">   
+                <label class="form-profile__label" for="pro">Набор массы</label>
               </li>
               <li class="form-profile__item">
-                <label class="form-profile__label">
-                  <input class="form-profile__input visually-hidden" type="radio">
-                  Не знаю (Нужен ваш совет)
-                </label>
+                <input class="form-profile__input form-profile__input--radio visually-hidden" id="unknown" type="radio" name="product-group" value="unknown">   
+                <label class="form-profile__label" for="unknown">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
@@ -122,25 +116,25 @@
             <ul class="form-profile__list container">
               <li class="form-profile__item">
                 <label class="form-profile__label">
-                  <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox">
+                  <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox" name="sweetener">
                   Сахарозаменитель
                 </label>
               </li>
               <li class="form-profile__item">
                 <label class="form-profile__label">
-                  <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox">
+                  <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox" name="water">
                   Питьевая вода
                 </label>
               </li>
               <li class="form-profile__item">
                 <label class="form-profile__label">
-                  <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox">
+                  <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox" name="milk">
                   Молоко
                 </label>
               </li>
               <li class="form-profile__item">
                 <label class="form-profile__label">
-                  <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox">
+                  <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox" name="vitamins">
                   Витамины
                 </label>
               </li>

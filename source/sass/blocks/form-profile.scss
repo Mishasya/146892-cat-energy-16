@@ -6,7 +6,7 @@
   width: 320px;
   margin: 0;
   padding: 20px 0;
-  padding-bottom: 23px;
+  padding-bottom: 8px;
   border: none;
 
   &--border-line {
@@ -73,9 +73,28 @@
 
 .form-profile__list {
   @include list-reset();
+  padding-top: 6px;
 }
 
 .form-profile__item {
-  padding-left: 46px;
+  padding-left: 66px;
+  margin-bottom: 25px;
+}
+
+.form-profile__input--radio + .form-profile__label::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  left: -44px;
+  top: -5px;
+  border-radius: 50%;
+  background-color: $white;
+  box-shadow: 0 0 0 1px #cdcdcd;
+  border: 8px solid $white;
+}
+
+.form-profile__input--radio:checked + .form-profile__label::before {
+  background-color: $green;
 }
 
