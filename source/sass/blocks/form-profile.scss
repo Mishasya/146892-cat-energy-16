@@ -9,8 +9,14 @@
   padding-bottom: 8px;
   border: none;
 
-  &--border-line {
-    border-bottom: 1px solid #e6e6e6;
+  &--product {
+    padding-bottom: 2px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
+
+  &--contact-details {
+    padding-top: 29px;
   }
 }
 
@@ -98,3 +104,24 @@
   background-color: $green;
 }
 
+.form-profile__legend {
+  position: relative;
+  margin-bottom: 33px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100px;
+    top: 13px;
+    left: 200px;
+    background-color: $green;
+  }
+}
+
+.form-profile__input-inner--test .form-profile__input {
+  flex-grow: 1;
+}

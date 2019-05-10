@@ -50,7 +50,7 @@
         </div>
 
         <form class="form-profile" action="#" method="post">
-          <fieldset class="form-profile__fieldset form-profile__fieldset--border-line">
+          <fieldset class="form-profile__fieldset">
             <div class="container">
               <div class="form-profile__input-inner">
                 <label class="form-profile__label form-profile__label--lb-name" for="name">Имя:*</label>
@@ -67,7 +67,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="form-profile__fieldset form-profile__fieldset--border-line">
+          <fieldset class="form-profile__fieldset form-profile__fieldset--product">
             <ul class="form-profile__list">
               <li class="form-profile__item">
                 <input class="form-profile__input form-profile__input--radio visually-hidden" id="slim" type="radio" name="product-group" value="slim" checked>   
@@ -84,18 +84,18 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form-profile__fieldset">
+          <fieldset class="form-profile__fieldset form-profile__fieldset--contact-details">
             <div class="container">
               <legend class="form-profile__legend">Контактные данные (владельца кота)</legend>
   
-              <div class="form-profile__input-inner">
+              <div class="form-profile__input-inner form-profile__input-inner--test">
                 <label class="form-profile__label" for="name">E-mail:*</label>
                 <input class="form-profile__input" id="name" type="text" placeholder="kuklachev@gmail.com">
               </div>
   
               <div class="form-profile__input-inner">
-                <label class="form-profile__label" for="name">Телефон:*</label>
-                <input class="form-profile__input" id="name" type="text" placeholder="8 (960) 900-60-90">
+                <label class="form-profile__label" for="phone">Телефон:*</label>
+                <input class="form-profile__input" id="phone" type="text" placeholder="8 (960) 900-60-90">
               </div>
             </div>
           </fieldset>
@@ -115,28 +115,20 @@
 
             <ul class="form-profile__list container">
               <li class="form-profile__item">
-                <label class="form-profile__label">
-                  <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox" name="sweetener">
-                  Сахарозаменитель
-                </label>
+                <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox" name="sweetener">
+                <label class="form-profile__label"></label>Сахарозаменитель</label>
               </li>
               <li class="form-profile__item">
-                <label class="form-profile__label">
-                  <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox" name="water">
-                  Питьевая вода
-                </label>
+                <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox" name="water">
+                <label class="form-profile__label">Питьевая вода</label>
               </li>
               <li class="form-profile__item">
-                <label class="form-profile__label">
-                  <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox" name="milk">
-                  Молоко
-                </label>
+                <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox" name="milk">
+                <label class="form-profile__label">Молоко</label>
               </li>
               <li class="form-profile__item">
-                <label class="form-profile__label">
-                  <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox" name="vitamins">
-                  Витамины
-                </label>
+                <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox" name="vitamins">
+                <label class="form-profile__label">Витамины</label>
               </li>
             </ul>
           </fieldset>
