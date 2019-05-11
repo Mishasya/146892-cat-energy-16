@@ -17,6 +17,16 @@
 
   &--contact-details {
     padding-top: 29px;
+    padding-bottom: 0;
+  }
+
+  &--comment {
+    padding-top: 16px;
+    padding-bottom: 27px;
+  }
+
+  &--add-goods {
+    padding-top: 0;
   }
 }
 
@@ -94,9 +104,39 @@
     position: absolute;
     content: "";
     height: 3px;
-    width: 100px;
+    width: 100vw;
     top: 13px;
     left: 200px;
     background-color: $green;
+  }
+}
+
+.form-profile__fieldset--comment .form-profile__legend {
+  margin: 0;
+  margin-bottom: 33px;
+  font-weight: normal;
+
+  &::after {
+    left: 142px;
+  }
+}
+
+.form-profile__textarea {
+  width: 251px;
+  min-height: 123px;
+  padding: 13px 14px;
+  border: 1px solid #e6e6e6;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-profile__fieldset--add-goods .form-profile__legend {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+  &::after {
+    left: 165px;
   }
 }
