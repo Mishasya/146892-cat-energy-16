@@ -32,42 +32,21 @@
 .form-profile__label {
   position: relative;
   display: block;
+  margin-right: 15px;
+  flex-shrink: 0;
   font-size: 16px;
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
   cursor: pointer;
   user-select: none;
-
-  &--lb-name {
-    width: 37px;
-  }
-
-  &--lb-weight {
-    width: 60px;
-  }
-
-  &--lb-age {
-    width: 94px;
-  }
 }
 
 .form-profile__input {
+  width: 100%;
   padding: 13px;
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
-
-  &--name {
-    width: 230px;
-  }
-
-  &--weight {
-    width: 204px;
-  }
-
-  &--age {
-    width: 172px;
-  }
 
   &::placeholder {
     font-size: 16px;
@@ -120,8 +99,4 @@
     left: 200px;
     background-color: $green;
   }
-}
-
-.form-profile__input-inner--test .form-profile__input {
-  flex-grow: 1;
 }
