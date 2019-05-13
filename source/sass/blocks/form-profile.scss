@@ -27,6 +27,7 @@
 
   &--add-goods {
     padding-top: 0;
+    padding-bottom: 17px;
   }
 }
 
@@ -52,6 +53,10 @@
   user-select: none;
 }
 
+.form-profile__fieldset--contact-details .form-profile__label {
+  margin-right: 11px;
+}
+
 .form-profile__input {
   width: 100%;
   padding: 13px;
@@ -63,6 +68,11 @@
     line-height: 18px;
     color: $grey;
     text-transform: uppercase;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $grey;
   }
 }
 
@@ -87,6 +97,14 @@
   background-color: $white;
   box-shadow: 0 0 0 1px #cdcdcd;
   border: 8px solid $white;
+}
+
+.form-profile__input--radio:hover + .form-profile__label::before {
+  box-shadow: 0 0 0 1px #bababa;
+}
+
+.form-profile__input--radio:active + .form-profile__label::before {
+  opacity: 0.3;
 }
 
 .form-profile__input--radio:checked + .form-profile__label::before {
@@ -129,6 +147,11 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  &:focus {
+    outline: none;
+    border-color: $grey;
+  }
 }
 
 .form-profile__fieldset--add-goods .form-profile__legend {
@@ -140,3 +163,54 @@
     left: 165px;
   }
 }
+
+.form-profile__input--checkbox + .form-profile__label::before {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 28px;
+  left: -46px;
+  top: -5px;
+  border: 1px solid #cdcdcd;
+  background-color: $white;
+}
+
+.form-profile__input--checkbox:hover + .form-profile__label::before {
+  border-color: #bababa;
+}
+
+.form-profile__input--checkbox:active + .form-profile__label::before {
+  opacity: 0.3;
+}
+
+.form-profile__input--checkbox:checked + .form-profile__label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.form-profile__submit-wrapper {
+  width: 320px;
+  padding-bottom: 18px;
+}
+
+.form-profile__submit-btn {
+  @include toggle-btn-reset();
+  padding: 9px 0;
+  width: 280px;
+  margin-bottom: 8px;
+  background-color: $green;
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.form-profile__text-required {
+  width: 280px;
+  font-family: $font-arial;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+

@@ -36,3 +36,12 @@
   color: #111111;
   text-transform: uppercase;
 } 
+
+
+@media (min-width: $tablet-width) {
+
+  .profile__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
