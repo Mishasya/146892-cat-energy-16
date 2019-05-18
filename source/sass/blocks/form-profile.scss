@@ -118,6 +118,10 @@
   line-height: 24px;
   color: #111111;
 
+  &--contacts {
+    width: 185px;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -214,3 +218,176 @@
   text-align: center;
 }
 
+
+@media (min-width: $tablet-width) {
+
+  .form-profile {
+    width: 629px;
+    padding: 0 43px;
+    padding-right: 36px;
+  }
+
+  .form-profile__fieldset {
+    width: 629px;
+    padding-bottom: 52px;
+
+    &--product {
+      width: 627px;
+      padding-top: 27px;
+      padding-bottom: 1px;
+      border: 1px solid #ededed;
+    }
+
+    &--contact-details {
+      padding-top: 76px;
+      padding-bottom: 29px;
+    }
+
+    &--comment {
+      padding-bottom: 60px;
+    }
+
+    &--add-goods {
+      padding-bottom: 14px;
+    }
+  }
+
+  .form-profile__input-inner {
+    width: 630px;
+    margin-bottom: 19px;
+  }
+
+  .form-profile__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form-profile__input {
+    padding: 17px;
+    padding-bottom: 16px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .form-profile__list {
+    width: 627px;
+  }
+
+  .form-profile__item {
+    padding-left: 85px;
+    margin-bottom: 33px;
+  }
+
+  .form-profile__input--radio + .form-profile__label::before {
+    width: 18px;
+    height: 18px;
+    left: -58px;
+    top: -8px;
+    border-width: 10px;
+  }
+
+  .form-profile__legend {
+    font-size: 36px;
+    line-height: 36px;
+
+    &--contacts {
+      width: 629px;
+      margin-bottom: 75px;
+    }
+
+    &::after {
+      top: 21px;
+      left: 87.5%;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 3px;
+      width: 100vw;
+      top: 21px;
+      right: 106.8%;
+      background-color: $green;
+    }
+  }
+
+  .form-profile__fieldset--comment .form-profile__legend {
+    margin-bottom: 76px;
+
+    &::after {
+      left: 34.5%;
+    }
+  }
+
+  .form-profile__textarea {
+    width: 597px;
+    min-height: 148px;
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-profile__fieldset--add-goods .form-profile__legend {
+    margin: 0;
+    margin-bottom: 62px;
+
+    &::before {
+      right: 114.8%;
+      top: 23px;
+    }
+
+    &::after {
+      left: 89%;
+      top: 23px;
+    }
+  }
+
+  .form-profile__list {
+
+    &--checkbox {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .form-profile__list--checkbox .form-profile__item {
+    min-width: 200px;
+    padding-left: 56px;
+    margin-bottom: 52px;
+
+    &:nth-child(odd) {
+      margin-right: 89px;
+    }
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+
+  .form-profile__input--checkbox + .form-profile__label::before {
+    width: 38px;
+    height: 38px;
+    left: -60px;
+    top: -10px;
+  }
+
+  .form-profile__submit-wrapper {
+    width: 629px;
+    padding-bottom: 63px;
+  }
+
+  .form-profile__submit-btn {
+    padding: 15px 0;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 57px;
+  }
+
+  .form-profile__text-required {
+    width: 190px;
+    font-size: 16px;
+  }
+}

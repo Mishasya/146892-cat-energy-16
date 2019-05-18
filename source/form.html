@@ -41,7 +41,7 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-main--form">
       <section class="profile">
         <div class="profile__title-inner container">
           <h1 class="profile__title">Подбор программы</h1>
@@ -51,24 +51,24 @@
 
         <form class="form-profile" action="#" method="post">
           <fieldset class="form-profile__fieldset">
-            <div class="container">
+            <div class="container container--form">
               <div class="form-profile__input-inner">
-                <label class="form-profile__label form-profile__label--lb-name" for="name">Имя:*</label>
-                <input class="form-profile__input form-profile__input--name" id="name" type="text" placeholder="Барсик">
+                <label class="form-profile__label" for="name">Имя:*</label>
+                <input class="form-profile__input" id="name" type="text" placeholder="Барсик">
               </div>
               <div class="form-profile__input-inner">
-                <label class="form-profile__label form-profile__label--lb-weight" for="weight">Вес (кг):*</label>
-                <input class="form-profile__input form-profile__input--weight" id="weight" type="text" placeholder="7">
+                <label class="form-profile__label" for="weight">Вес (кг):*</label>
+                <input class="form-profile__input" id="weight" type="text" placeholder="7">
               </div>
               <div class="form-profile__input-inner">
-                <label class="form-profile__label form-profile__label--lb-age" for="age">Возраст (лет):</label>
-                <input class="form-profile__input form-profile__input--age" id="age" type="text" placeholder="7">
+                <label class="form-profile__label" for="age">Возраст (лет):</label>
+                <input class="form-profile__input" id="age" type="text" placeholder="7">
               </div>
             </div>
           </fieldset>
 
           <fieldset class="form-profile__fieldset form-profile__fieldset--product">
-            <ul class="form-profile__list container">
+            <ul class="form-profile__list container container--form">
               <li class="form-profile__item">
                 <input class="form-profile__input form-profile__input--radio visually-hidden" id="slim" type="radio" name="product-group" value="slim" checked>   
                 <label class="form-profile__label" for="slim">Похудение</label>
@@ -85,8 +85,8 @@
           </fieldset>
 
           <fieldset class="form-profile__fieldset form-profile__fieldset--contact-details">
-            <div class="container">
-              <legend class="form-profile__legend">Контактные данные (владельца кота)</legend>
+            <div class="container container--form">
+              <legend class="form-profile__legend form-profile__legend--contacts">Контактные данные (владельца кота)</legend>
   
               <div class="form-profile__input-inner">
                 <label class="form-profile__label" for="name">E-mail:*</label>
@@ -101,7 +101,7 @@
           </fieldset>
 
           <div class="form-profile__fieldset form-profile__fieldset--comment">
-            <div class="container">
+            <div class="container container--form">
               <h2 class="form-profile__legend">Комментарий</h2>
   
               <textarea class="form-profile__textarea">Расскажите обо всех повадках кота</textarea>
@@ -111,7 +111,7 @@
           <fieldset class="form-profile__fieldset form-profile__fieldset--add-goods">
             <legend class="form-profile__legend">Дополнительно</legend>
 
-            <ul class="form-profile__list container">
+            <ul class="form-profile__list form-profile__list--checkbox container container--form">
               <li class="form-profile__item">
                 <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
                 <label class="form-profile__label" for ="sweetener">Сахарозаменитель</label>
@@ -132,7 +132,7 @@
           </fieldset>
 
           <div class="form-profile__submit-wrapper">
-            <div class="container">
+            <div class="container container--submit container--form">
               <button class="form-profile__submit-btn btn" type="submit">Отправить заявку</button>
   
               <p class="form-profile__text-required">* — Обязательные поля</p>

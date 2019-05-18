@@ -40,8 +40,30 @@
 
 @media (min-width: $tablet-width) {
 
+  .profile {
+    width: 768px;
+  }
+
+  .profile__title-inner {
+    margin: 0;
+    padding-top: 22px;
+    padding-bottom: 45px;
+
+    &::before {
+      display: none;
+    }
+  }
+
   .profile__title {
+    margin-bottom: 56px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  .profile__text-choice {
+    width: 325px;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

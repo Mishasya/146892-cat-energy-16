@@ -8,6 +8,14 @@
 
   .container {
     width: 708px;
+
+    &--form {
+      width: 629px;
+    }
+
+    &--submit {
+      display: flex;
+    }
   }
 }
 
