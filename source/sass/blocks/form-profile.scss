@@ -1,22 +1,17 @@
 .form-profile {
   width: 320px;
+  margin: 0 auto;
 }
 
 .form-profile__fieldset {
-  width: 320px;
+  width: 280px;
   margin: 0;
   padding: 20px 0;
   padding-bottom: 8px;
   border: none;
 
-  &--product {
-    padding-bottom: 2px;
-    border-top: 1px solid #ededed;
-    border-bottom: 1px solid #ededed;
-  }
-
   &--contact-details {
-    padding-top: 29px;
+    margin-top: 30px;
     padding-bottom: 0;
   }
 
@@ -28,6 +23,12 @@
   &--add-goods {
     padding-top: 0;
     padding-bottom: 17px;
+  }
+
+  &--product {
+    width: 318px;
+    padding-bottom: 1px;
+    border: 1px solid #ededed;
   }
 }
 
@@ -78,11 +79,15 @@
 
 .form-profile__list {
   @include list-reset();
-  padding-top: 6px;
+  padding-top: 7px;
+
+  &--checkbox .form-profile__item {
+    padding-left: 46px;
+  }
 }
 
 .form-profile__item {
-  padding-left: 66px;
+  padding-left: 64px;
   margin-bottom: 25px;
 }
 
@@ -114,12 +119,15 @@
 .form-profile__legend {
   position: relative;
   margin-bottom: 33px;
+  padding-right: 25px;
   font-size: 24px;
   line-height: 24px;
   color: #111111;
+  background-color: $white;
 
   &--contacts {
-    width: 185px;
+    width: 207px;
+    margin-bottom: 13px;
   }
 
   &::after {
@@ -128,19 +136,17 @@
     height: 3px;
     width: 100vw;
     top: 13px;
-    left: 200px;
+    left: 0;
     background-color: $green;
+    z-index: -1;
   }
 }
 
 .form-profile__fieldset--comment .form-profile__legend {
+  width: 120px;
   margin: 0;
   margin-bottom: 33px;
   font-weight: normal;
-
-  &::after {
-    left: 142px;
-  }
 }
 
 .form-profile__textarea {
@@ -159,13 +165,8 @@
 }
 
 .form-profile__fieldset--add-goods .form-profile__legend {
-  width: 280px;
-  margin: 0 auto;
+  width: 140px;
   margin-bottom: 32px;
-
-  &::after {
-    left: 165px;
-  }
 }
 
 .form-profile__input--checkbox + .form-profile__label::before {
@@ -224,6 +225,7 @@
   .form-profile {
     width: 629px;
     padding: 0 43px;
+    padding-top: 25px;
     padding-right: 36px;
   }
 
@@ -233,6 +235,7 @@
 
     &--product {
       width: 627px;
+      margin-bottom: 77px;
       padding-top: 27px;
       padding-bottom: 1px;
       border: 1px solid #ededed;
@@ -248,7 +251,7 @@
     }
 
     &--add-goods {
-      padding-bottom: 14px;
+      padding-bottom: 11px;
     }
   }
 
@@ -294,32 +297,29 @@
     line-height: 36px;
 
     &--contacts {
-      width: 629px;
-      margin-bottom: 75px;
+      width: 552px;
+      margin-bottom: 0;
+      padding-right: 40px;
     }
 
     &::after {
       top: 21px;
-      left: 87.5%;
     }
 
     &::before {
       position: absolute;
       content: "";
       height: 3px;
-      width: 100vw;
+      width: 100px;
       top: 21px;
-      right: 106.8%;
+      left: -143px;
       background-color: $green;
     }
   }
 
   .form-profile__fieldset--comment .form-profile__legend {
+    width: 190px;
     margin-bottom: 76px;
-
-    &::after {
-      left: 34.5%;
-    }
   }
 
   .form-profile__textarea {
@@ -331,6 +331,7 @@
   }
 
   .form-profile__fieldset--add-goods .form-profile__legend {
+    width: 248px;
     margin: 0;
     margin-bottom: 62px;
 
@@ -375,8 +376,11 @@
   }
 
   .form-profile__submit-wrapper {
+    display: flex;
     width: 629px;
+    margin-right: 60px;
     padding-bottom: 63px;
+    flex-wrap: wrap;
   }
 
   .form-profile__submit-btn {
@@ -390,4 +394,18 @@
     width: 190px;
     font-size: 16px;
   }
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .form-profile {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  // .form-profile__fieldset {
+  //   width: 1300px;
+  // }
 }

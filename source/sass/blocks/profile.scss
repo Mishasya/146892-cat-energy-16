@@ -1,6 +1,7 @@
 .profile {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
+  padding: 20px 0;
 }
 
 .profile__title-inner {
@@ -41,7 +42,8 @@
 @media (min-width: $tablet-width) {
 
   .profile {
-    width: 768px;
+    width: 708px;
+    margin: 0 auto;
   }
 
   .profile__title-inner {
@@ -67,3 +69,25 @@
     line-height: 30px;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+
+  .profile {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  // .profile__title-inner {
+  //   width: 1220px;
+  //   padding: 0;
+  //   padding-top: 19px;
+  //   padding-left: 10px;
+  //   box-sizing: border-box;
+  // }
+
+  .profile__text-choice {
+    margin: 0;
+  }
+}
+

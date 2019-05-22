@@ -13,7 +13,7 @@
     <header class="page-header">
       <div class="page-header__container">
         <div class="page-header__inner">
-          <a class="logo logo--mobile">
+          <a class="logo logo--mobile" href="index.html">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -41,17 +41,19 @@
       </div>
     </header>
 
-    <main class="page-main page-main--form">
-      <section class="profile">
-        <div class="profile__title-inner container">
-          <h1 class="profile__title">Подбор программы</h1>
-  
-          <p class="profile__text-choice">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        </div>
+    <main class="page-main">
 
-        <form class="form-profile" action="#" method="post">
+      <div class="profile">
+        <h1 class="profile__title">Подбор программы</h1>
+
+        <p class="profile__text-choice">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      </div>
+
+      <form class="form-profile" action="#" method="post">
+        <div class="container container--form-desktop">
+
           <fieldset class="form-profile__fieldset">
-            <div class="container container--form">
+            <div class="form-profile__fieldset-inner">
               <div class="form-profile__input-inner">
                 <label class="form-profile__label" for="name">Имя:*</label>
                 <input class="form-profile__input" id="name" type="text" placeholder="Барсик">
@@ -67,51 +69,50 @@
             </div>
           </fieldset>
 
-          <fieldset class="form-profile__fieldset form-profile__fieldset--product">
-            <ul class="form-profile__list container container--form">
-              <li class="form-profile__item">
-                <input class="form-profile__input form-profile__input--radio visually-hidden" id="slim" type="radio" name="product-group" value="slim" checked>   
-                <label class="form-profile__label" for="slim">Похудение</label>
-              </li>
-              <li class="form-profile__item">
-                <input class="form-profile__input form-profile__input--radio visually-hidden" id="pro" type="radio" name="product-group" value="pro">   
-                <label class="form-profile__label" for="pro">Набор массы</label>
-              </li>
-              <li class="form-profile__item">
-                <input class="form-profile__input form-profile__input--radio visually-hidden" id="unknown" type="radio" name="product-group" value="unknown">   
-                <label class="form-profile__label" for="unknown">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
+        </div>
 
+        <fieldset class="form-profile__fieldset form-profile__fieldset--product">
+          <ul class="form-profile__list">
+            <li class="form-profile__item">
+              <input class="form-profile__input form-profile__input--radio visually-hidden" id="slim" type="radio" name="product-group" value="slim" checked>   
+              <label class="form-profile__label" for="slim">Похудение</label>
+            </li>
+            <li class="form-profile__item">
+              <input class="form-profile__input form-profile__input--radio visually-hidden" id="pro" type="radio" name="product-group" value="pro">   
+              <label class="form-profile__label" for="pro">Набор массы</label>
+            </li>
+            <li class="form-profile__item">
+              <input class="form-profile__input form-profile__input--radio visually-hidden" id="unknown" type="radio" name="product-group" value="unknown">   
+              <label class="form-profile__label" for="unknown">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="container">
           <fieldset class="form-profile__fieldset form-profile__fieldset--contact-details">
-            <div class="container container--form">
-              <legend class="form-profile__legend form-profile__legend--contacts">Контактные данные (владельца кота)</legend>
-  
-              <div class="form-profile__input-inner">
-                <label class="form-profile__label" for="name">E-mail:*</label>
-                <input class="form-profile__input" id="name" type="text" placeholder="kuklachev@gmail.com">
-              </div>
-  
-              <div class="form-profile__input-inner">
-                <label class="form-profile__label" for="phone">Телефон:*</label>
-                <input class="form-profile__input" id="phone" type="text" placeholder="8 (960) 900-60-90">
-              </div>
+            <legend class="form-profile__legend form-profile__legend--contacts">Контактные данные (владельца кота)</legend>
+
+            <div class="form-profile__input-inner">
+              <label class="form-profile__label" for="name">E-mail:*</label>
+              <input class="form-profile__input" id="name" type="email" placeholder="kuklachev@gmail.com">
+            </div>
+
+            <div class="form-profile__input-inner">
+              <label class="form-profile__label" for="phone">Телефон:*</label>
+              <input class="form-profile__input" id="phone" type="tel" placeholder="8 (960) 900-60-90">
             </div>
           </fieldset>
 
           <div class="form-profile__fieldset form-profile__fieldset--comment">
-            <div class="container container--form">
-              <h2 class="form-profile__legend">Комментарий</h2>
-  
-              <textarea class="form-profile__textarea">Расскажите обо всех повадках кота</textarea>
-            </div>
+            <h2 class="form-profile__legend">Комментарий</h2>
+
+            <textarea class="form-profile__textarea">Расскажите обо всех повадках кота</textarea>
           </div>
 
           <fieldset class="form-profile__fieldset form-profile__fieldset--add-goods">
             <legend class="form-profile__legend">Дополнительно</legend>
 
-            <ul class="form-profile__list form-profile__list--checkbox container container--form">
+            <ul class="form-profile__list form-profile__list--checkbox">
               <li class="form-profile__item">
                 <input class="form-profile__input visually-hidden form-profile__input--checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
                 <label class="form-profile__label" for ="sweetener">Сахарозаменитель</label>
@@ -132,14 +133,14 @@
           </fieldset>
 
           <div class="form-profile__submit-wrapper">
-            <div class="container container--submit container--form">
-              <button class="form-profile__submit-btn btn" type="submit">Отправить заявку</button>
-  
-              <p class="form-profile__text-required">* — Обязательные поля</p>
-            </div>
+            <button class="form-profile__submit-btn btn" type="submit">Отправить заявку</button>
+
+            <p class="form-profile__text-required">* — Обязательные поля</p>
           </div>
-        </form>
-      </section>
+
+        </div>
+      </form>
+
     </main>
 
     <footer class="page-footer">
