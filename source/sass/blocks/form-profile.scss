@@ -134,7 +134,7 @@
     position: absolute;
     content: "";
     height: 3px;
-    width: 100vw;
+    width: 88vw;
     top: 13px;
     left: 0;
     background-color: $green;
@@ -339,11 +339,6 @@
       right: 114.8%;
       top: 23px;
     }
-
-    &::after {
-      left: 89%;
-      top: 23px;
-    }
   }
 
   .form-profile__list {
@@ -400,12 +395,99 @@
 @media (min-width: $desktop-width) {
 
   .form-profile {
+    display: flex;
     width: 1220px;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 26px;
+    flex-wrap: wrap;
   }
 
-  // .form-profile__fieldset {
-  //   width: 1300px;
-  // }
+  .form-profile__fieldset {
+    width: 570px;
+    padding: 0;
+    padding-top: 20px;
+
+    &--product {
+      width: 568px;
+      margin-top: 21px;
+      margin-bottom: 0;
+      border-color: #cdcdcd;
+    }
+
+    &--contact-details {
+      width: 1220px;
+      margin-top: 67px;
+      padding-top: 74px;
+    }
+
+    &--comment {
+      width: 1220px;
+      margin-top: 67px;
+      padding-top: 0;
+    }
+
+    &--add-goods {
+      width: 1220px;
+      margin-top: 63px;
+      padding-top: 0;
+    }
+  }
+
+  .form-profile__input-inner {
+    width: 570px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-profile__list {
+    width: 568px;
+    padding-top: 12px;
+    padding-bottom: 5px;
+  }
+
+  .form-profile__flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-profile__fieldset--contact-details .form-profile__input-inner {
+    margin: 0;
+    margin-right: 76px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .form-profile__list--checkbox {
+    display: flex;
+    width: 1220px;
+    padding-top: 5px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .form-profile__list--checkbox .form-profile__item {
+    min-width: 188px;
+    
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+  }
+
+  .form-profile__label--checkbox {
+    margin: 0;
+  }
+
+  .form-profile__submit-wrapper {
+    width: 1220px;
+    margin-top: 15px;
+  }
+
+  .form-profile__submit-btn {
+    min-width: 567px;
+    margin-right: 75px;
+  }
 }
