@@ -44,6 +44,8 @@
     top: 21px;
     left: 22px;
     background-image: url("../img/icon-cat-slim.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   &--weight {
@@ -137,10 +139,21 @@
     color: #111111;
 
     &::before {
-      width: 145px;
-      height: 195px;
-      left: 500px;
+      width: 218px;
+      height: 194px;
+      left: 449px;
+      top: 78px;
       background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--weight {
+
+      &::before {
+        width: 269px;
+        left: 411px;
+        top: 133px;
+      }
     }
   }
 
@@ -201,10 +214,18 @@
     margin-bottom: 73px;
 
     &::before {
-      width: 72px;
-      height: 97px;
-      left: 61px;
-      top: 84px;
+      width: 96px;
+      left: 53px;
+      top: 40px;
+    }
+
+    &--weight {
+
+      &::before {
+        width: 134px;
+        left: 35px;
+        top: 68px;
+      }
     }
   }
 

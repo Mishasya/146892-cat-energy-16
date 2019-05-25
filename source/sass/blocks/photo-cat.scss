@@ -1,3 +1,7 @@
+.photo-cat {
+  width: 320px;
+}
+
 .photo-cat__img {
   &--after {
     display: none;
@@ -9,12 +13,14 @@
 
   .photo-cat {
     position: relative;
-    min-height: 300px;
+    width: 690px;
+    margin: 0 auto;
+    min-height: 305px;
   }
   .photo-cat__img {
     position: absolute;
-    bottom: -48px;
-    left: 17px;
+    bottom: -41px;
+    left: 6px;
 
     // &--before {
     //   clip-path: inset(100px 50px);
@@ -29,8 +35,13 @@
 
 @media (min-width: $desktop-width) {
 
+  .photo-cat {
+    width: 690px;
+  }
+
   .photo-cat__img {
+    width: 690px;
     bottom: -23px;
-    left: 5px;
+    left: 40px;
   }
 }

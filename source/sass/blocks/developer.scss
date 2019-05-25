@@ -1,7 +1,7 @@
 .developer {
   display: flex;
   width: 280px;
-  padding: 19px 0;
+  padding: 15px 0;
   justify-content: space-between;
   align-items: center;
 }
@@ -11,6 +11,10 @@
   line-height: 16px;
   font-family: "Arial", sans-serif;
   color: $grey;
+}
+
+.developer__logo-link {
+  margin-right: -6px;
 }
 
 
