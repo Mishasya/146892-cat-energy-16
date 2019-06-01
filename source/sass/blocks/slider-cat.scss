@@ -19,11 +19,13 @@
 }
 
 .slider-cat__text {
+  @include toggle-btn-reset();
   display: inline-block;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .slider-cat__scale {
@@ -75,6 +77,14 @@
     font-size: 20px;
     line-height: 20px;
     color: #111111;
+
+    &:hover {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:active {
+      border: none;
+    }
   }
 
   .slider-cat__scale {
@@ -101,6 +111,18 @@
                 0 0 0 13px #cfcfcf,
                 0 4px 5px 12px rgba($black, 0.15%);
     cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 0 12px $white,
+                0 0 0 13px #cfcfcf,
+                0 4px 5px 12px rgba($black, 0.3%);
+    }
+
+    &:active {
+      box-shadow: 0 0 0 12px $white,
+                0 0 0 13px $green,
+                0 4px 5px 12px rgba($black, 0.5%);
+    }
   }
 }
 

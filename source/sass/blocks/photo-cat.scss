@@ -22,14 +22,16 @@
     bottom: -41px;
     left: 6px;
 
-    // &--before {
-    //   clip-path: inset(100px 50px);
-    // }
+    &--before {
+      clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+    }
 
     &--after {
       display: inline-block;
+      clip-path: polygon(100% 0%, 0% 100%, 50% 0%, 0% 100%);
     }
   }
+
 }
 
 

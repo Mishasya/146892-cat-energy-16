@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Кэт энерджи</title>
   </head>
   <body>
@@ -131,14 +131,14 @@
                 </picture>
 
                 <picture>
-                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-tablet@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/before-tablet@2x.png 2x">
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-tablet@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                   <img class="photo-cat__img photo-cat__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png" alt="Изображение кота после программы Slim">
                 </picture>
               </div>
 
               <div class="slider-cat__inner">
-                <span class="slider-cat__text">Было</span>
+                <button class="slider-cat__text">Было</button>
 
                 <div class="slider-cat__scale">
                   <div class="slider-cat__bar"></div>
@@ -146,7 +146,7 @@
 
                 <button class="slider-cat__toggle"></button>
 
-                <span class="slider-cat__text">Стало</span>
+                <button class="slider-cat__text">Стало</button>
               </div>
             </div>
           </div>
