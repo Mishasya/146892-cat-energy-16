@@ -33,9 +33,10 @@
 }
 
 .form-profile__input-inner {
+  position: relative;
   display: flex;
   width: 280px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
@@ -61,8 +62,14 @@
 .form-profile__input {
   width: 100%;
   padding: 13px;
+  padding-bottom: 9px;
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
+
+  &--mail:focus + .form-profile__svg-img,
+  &--phone:focus + .form-profile__svg-img {
+    fill: $green;
+  }
 
   &::placeholder {
     font-size: 16px;
@@ -75,6 +82,11 @@
     outline: none;
     border-color: $grey;
   }
+}
+
+.form-profile__svg-img {
+  position: absolute;
+  right: 13px;
 }
 
 .form-profile__list {
@@ -126,8 +138,9 @@
   background-color: $white;
 
   &--contacts {
-    width: 207px;
+    width: 182px;
     margin-bottom: 13px;
+    padding-right: 19px;
   }
 
   &::after {
@@ -267,12 +280,17 @@
 
   .form-profile__input {
     padding: 17px;
-    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-bottom: 11px;
 
     &::placeholder {
       font-size: 20px;
       line-height: 20px;
     }
+  }
+
+  .form-profile__svg-img {
+    right: 19px;
   }
 
   .form-profile__list {
@@ -293,13 +311,13 @@
   }
 
   .form-profile__legend {
+    width: 225px;
     font-size: 36px;
     line-height: 36px;
 
     &--contacts {
-      width: 552px;
+      width: 532px;
       margin-bottom: 0;
-      padding-right: 40px;
     }
 
     &::after {
@@ -331,7 +349,7 @@
   }
 
   .form-profile__fieldset--add-goods .form-profile__legend {
-    width: 248px;
+    width: 225px;
     margin: 0;
     margin-bottom: 62px;
 
@@ -374,7 +392,7 @@
     display: flex;
     width: 629px;
     margin-right: 60px;
-    padding-bottom: 63px;
+    padding-bottom: 65px;
     flex-wrap: wrap;
   }
 
@@ -439,6 +457,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .form-profile__svg-img {
+    right: 20px;
   }
 
   .form-profile__list {

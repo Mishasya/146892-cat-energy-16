@@ -6,9 +6,14 @@
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js"></script>
     <title>Кэт энерджи</title>
   </head>
   <body>
+
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-header">
       <div class="page-header__container">
@@ -125,9 +130,9 @@
             <div class="slider-cat__container container">
               <div class="photo-cat">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop.webp 1x, img/before-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
@@ -135,9 +140,9 @@
                 </picture>
 
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-desktop.webp 1x, img/after-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
@@ -188,21 +193,37 @@
           <div class="page-footer__social social">
             <div class="social__inner">
               <a class="social__link" href="#" aria-label="Иконка Вконтакте">
-                <img src="img/sprite-icon-vk-mobile.svg" alt="">
+                <svg class="social__svg-img" width="30" height="16">
+                  <use xlink:href="img/sprite.svg#sprite-icon-vk"></use>
+                </svg>
+                <svg class="social__svg-img social__svg-img--mobile" width="22" height="12">
+                  <use xlink:href="img/sprite.svg#sprite-icon-vk-mobile"></use>
+                </svg>
               </a>
               <a class="social__link" href="#" aria-label="Иконка Инстаграм">
-                <img src="img/sprite-icon-insta-mobile.svg" alt="">
+                <svg class="social__svg-img" width="23" height="23">
+                  <use xlink:href="img/sprite.svg#sprite-icon-insta"></use>
+                </svg>
+                <svg class="social__svg-img social__svg-img--mobile" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#sprite-icon-insta-mobile"></use>
+                </svg>
               </a>
               <a class="social__link" href="#" aria-label="Иконка Фейсбук">
-                <img src="img/sprite-icon-fb-mobile.svg" alt="">
+                <svg class="social__svg-img" width="14" height="28">
+                  <use xlink:href="img/sprite.svg#sprite-icon-fb-mobile"></use>
+                </svg>
+                <svg class="social__svg-img social__svg-img--mobile" width="10" height="19">
+                  <use xlink:href="img/sprite.svg#sprite-icon-fb"></use>
+                </svg>
               </a>
             </div>
           </div>
 
           <div class="page-footer__developer developer">
-            <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            <a class="developer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="developer__logo" src="img/sprite-htmlacademy.svg" alt="Логотип HTML Academy">
+            <a class="developer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+              <svg class="developer__svg-img" width="41" height="47">
+                <use xlink:href="img/sprite.svg#sprite-htmlacademy"></use>
+              </svg>
             </a>
           </div>
         </div>

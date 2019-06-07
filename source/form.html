@@ -10,6 +10,10 @@
   </head>
   <body>
 
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <div class="page-header__container">
         <div class="page-header__inner">
@@ -95,12 +99,18 @@
             <div class="form-profile__flex-container">
               <div class="form-profile__input-inner">
                 <label class="form-profile__label" for="name">E-mail:*</label>
-                <input class="form-profile__input" id="name" type="email" placeholder="kuklachev@gmail.com">
+                <input class="form-profile__input form-profile__input--mail" id="name" type="email" placeholder="kuklachev@gmail.com">
+                <svg class="form-profile__svg-img" width="19" height="13">
+                  <use xlink:href="img/sprite.svg#sprite-icon-mail"></use>
+                </svg>
               </div>
 
               <div class="form-profile__input-inner">
                 <label class="form-profile__label" for="phone">Телефон:*</label>
-                <input class="form-profile__input" id="phone" type="tel" placeholder="8 (960) 900-60-90">
+                <input class="form-profile__input form-profile__input--phone" id="phone" type="tel" placeholder="8 (960) 900-60-90">
+                <svg class="form-profile__svg-img" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#sprite-icon-phone"></use>
+                </svg>
               </div>
             </div>
           </fieldset>
@@ -170,21 +180,37 @@
           <div class="page-footer__social social">
             <div class="social__inner">
               <a class="social__link" href="#" aria-label="Иконка Вконтакте">
-                <img src="img/sprite-icon-vk-mobile.svg" alt="">
+                <svg class="social__svg-img" width="30" height="16">
+                  <use xlink:href="img/sprite.svg#sprite-icon-vk"></use>
+                </svg>
+                <svg class="social__svg-img social__svg-img--mobile" width="22" height="12">
+                  <use xlink:href="img/sprite.svg#sprite-icon-vk-mobile"></use>
+                </svg>
               </a>
               <a class="social__link" href="#" aria-label="Иконка Инстаграм">
-                <img src="img/sprite-icon-insta-mobile.svg" alt="">
+                <svg class="social__svg-img" width="23" height="23">
+                  <use xlink:href="img/sprite.svg#sprite-icon-insta"></use>
+                </svg>
+                <svg class="social__svg-img social__svg-img--mobile" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#sprite-icon-insta-mobile"></use>
+                </svg>
               </a>
               <a class="social__link" href="#" aria-label="Иконка Фейсбук">
-                <img src="img/sprite-icon-fb-mobile.svg" alt="">
+                <svg class="social__svg-img" width="14" height="28">
+                  <use xlink:href="img/sprite.svg#sprite-icon-fb-mobile"></use>
+                </svg>
+                <svg class="social__svg-img social__svg-img--mobile" width="10" height="19">
+                  <use xlink:href="img/sprite.svg#sprite-icon-fb"></use>
+                </svg>
               </a>
             </div>
           </div>
 
           <div class="page-footer__developer developer">
-            <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            <a class="developer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="developer__logo" src="img/sprite-htmlacademy.svg" alt="Логотип HTML Academy">
+            <a class="developer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+              <svg class="developer__svg-img" width="41" height="47">
+                <use xlink:href="img/sprite.svg#sprite-htmlacademy"></use>
+              </svg>
             </a>
           </div>
         </div>

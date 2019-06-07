@@ -6,15 +6,29 @@
   align-items: center;
 }
 
-.developer__link {
+.developer__logo-link {
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   line-height: 16px;
   font-family: "Arial", sans-serif;
   color: $grey;
+  
+  &:hover .developer__svg-img,
+  &:active .developer__svg-img {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.developer__logo-link {
+.developer__svg-img {
   margin-right: -6px;
+  fill: #666666;
 }
 
 

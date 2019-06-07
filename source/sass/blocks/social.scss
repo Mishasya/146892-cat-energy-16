@@ -13,6 +13,23 @@
   align-items: center;
 }
 
+.social__svg-img {
+  display: none;
+
+  &--mobile {
+    display: inline-block;
+  }
+}
+
+.social__svg-img:hover {
+  fill: $green;
+}
+
+.social__svg-img:active {
+  fill: $green;
+  opacity: 0.3;
+}
+
 
 @media (min-width: $tablet-width) {
 
@@ -24,13 +41,29 @@
   .social__inner {
     margin: 0;
   }
+
+  .social__svg-img {
+    display: inline-block;
+
+    &--mobile {
+      display: none;
+    }
+  }
 }
 
 
 @media (min-width: $desktop-width) {
 
   .social {
-    width: 130px;
+    width: 124px;
     padding: 0;
+  }
+
+  .social__svg-img {
+    display: inline-block;
+
+    &--mobile {
+      display: none;
+    }
   }
 }

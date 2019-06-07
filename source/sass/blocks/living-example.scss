@@ -15,13 +15,13 @@
 .living-example__text {
   width: 270px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   font-family: "Arial", sans-serif;
 }
 
 .living-example__table {
   width: 280px;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
 }
 
 .living-example__table-row {
@@ -32,7 +32,7 @@
 
 .living-example__table-title {
   position: relative;
-  width: 118px;
+  width: 122px;
   margin-bottom: 9px;
   font-size: 24px;
   line-height: 24px;
@@ -45,7 +45,7 @@
     position: absolute;
     width: 122px;
     height: 54px;
-    top: -12px;
+    top: -13px;
     left: -2px;
     background-color: transparent;
     border: 1px solid #cdcdcd;
@@ -105,7 +105,7 @@
 
   .living-example__text {
     width: 677px;
-    margin-bottom: 65px;
+    margin-bottom: 68px;
   }
 
   .living-example__table-inner {
@@ -120,8 +120,9 @@
 
   .living-example__expenses {
     width: 177px;
+    margin-top: -5px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 26px;
     text-align: right;
     color: #111111;
   }
@@ -193,7 +194,7 @@
 
   .living-example__text {
     width: 435px;
-    margin-bottom: 80px;
+    margin-bottom: 83px;
   }
 
   .living-example__table-inner {
@@ -210,6 +211,7 @@
 
   .living-example__expenses {
     width: 327px;
+    margin-top: 1px;
   }
 
   .living-example__only-desktop {
