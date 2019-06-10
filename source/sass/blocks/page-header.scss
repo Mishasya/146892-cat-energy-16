@@ -23,6 +23,11 @@
   background-color: $black;
   cursor: pointer;
 
+  &--none {
+    background-color: transparent;
+    outline: none;
+  }
+
   &:before {
     content: "";
     position: absolute;
@@ -31,6 +36,7 @@
     width: 24px;
     height: 2px;
     background-color: $black;
+    cursor: pointer;
   }
 
   &:after {
@@ -41,7 +47,16 @@
     width: 24px;
     height: 2px;
     background-color: $black;
+    cursor: pointer;
   }
+}
+
+.page-header__toggle--none::before {
+  transform: rotate(45deg) translateY(-6px) translateX(-5px);
+}
+
+.page-header__toggle--none::after {
+  transform: rotate(-45deg) translateY(6px) translateX(-5px);
 }
 
 .page-header__toggle-inner {
