@@ -71,6 +71,10 @@
     fill: $green;
   }
 
+  &--error {
+    border-color: #ff8282;
+  }
+
   &::placeholder {
     font-size: 16px;
     line-height: 18px;

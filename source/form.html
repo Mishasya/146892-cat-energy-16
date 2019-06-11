@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.js"></script>
     <title>Кэт энерджи</title>
   </head>
   <body>
@@ -26,11 +27,11 @@
           </a>
 
           <div class="page-header__toggle-inner">
-            <button class="page-header__toggle" aria-label="Открыть меню"></button>
+            <button class="page-header__toggle page-header__toggle--no-js" aria-label="Открыть меню"></button>
           </div>
         </div>
         <nav class="page-header__nav">
-          <ul class="main-navigation">
+          <ul class="main-navigation main-navigation--no-js">
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="index.html">Главная</a>
             </li>
@@ -98,8 +99,8 @@
 
             <div class="form-profile__flex-container">
               <div class="form-profile__input-inner">
-                <label class="form-profile__label" for="name">E-mail:*</label>
-                <input class="form-profile__input form-profile__input--mail" id="name" type="email" placeholder="kuklachev@gmail.com">
+                <label class="form-profile__label" for="email">E-mail:*</label>
+                <input class="form-profile__input form-profile__input--mail" id="email" type="email" placeholder="kuklachev@gmail.com">
                 <svg class="form-profile__svg-img" width="19" height="13">
                   <use xlink:href="img/sprite.svg#sprite-icon-mail"></use>
                 </svg>
@@ -216,5 +217,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -3,6 +3,10 @@
   display: none;
   font-weight: 500;
 
+  &--no-js {
+    display: block;
+  }
+
   &--show {
     display: block;
   }
